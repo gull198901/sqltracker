@@ -1,16 +1,5 @@
 # Architecture
 
-## Legacy Finding Summary
-
-The legacy Windows implementation is built from two binaries:
-
-- `sqltracker2.exe`: .NET Framework WinForms UI and process injector.
-- `ociagent.dll`: native 32-bit DLL injected into the target process.
-
-The legacy injector uses `VirtualAllocEx`, `WriteProcessMemory`,
-`CreateRemoteThread`, and `LoadLibraryA`. The agent hooks OCI functions by patching
-function entry bytes and sends formatted text through a named pipe.
-
 ## New Design
 
 The new design keeps the user-facing realtime stream, but separates internal concerns:
