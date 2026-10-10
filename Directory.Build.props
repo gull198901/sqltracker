@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <SqlTrackerCoreTargetFramework Condition="'$(SqlTrackerCoreTargetFramework)' == ''">net8.0</SqlTrackerCoreTargetFramework>
+    <SqlTrackerWindowsTargetFramework Condition="'$(SqlTrackerWindowsTargetFramework)' == ''">net8.0-windows</SqlTrackerWindowsTargetFramework>
+  </PropertyGroup>
+</Project>
+

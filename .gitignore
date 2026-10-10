@@ -1,0 +1,25 @@
+# Build outputs
+bin/
+obj/
+out/
+artifacts/
+artifacts-net10/
+artifacts-publish/
+dist/
+
+# Local .NET/NuGet state used by sandboxed builds
+.dotnet-home/
+.nuget-packages/
+.appdata/
+.localappdata/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Native build outputs
+build/
+cmake-build-*/
